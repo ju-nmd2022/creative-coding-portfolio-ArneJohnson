@@ -24,7 +24,7 @@ function draw() {
       push();
       count++;
       var percentage = count / (amount ^ 2);
-      translate(xPosition + percentage / random(-30, 30), yPosition + percentage / random(-30, 30));
+      translate(yPosition + percentage / random(-30, 30), xPosition + percentage / random(-30, 30));
       rotate(percentage / random(-30, 30));
 
       noFill();
