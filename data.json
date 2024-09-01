@@ -1,27 +1,27 @@
 [
   {
-    "file": "experiments/lab1-v1.js",
+    "file": "experiments/lab1-1-original.js",
+    "name": "Lab1",
+    "description": "Creative coding lab 1 - Georg Nees line grid, original recreation."
+  },
+  {
+    "file": "experiments/lab1-1-v1.js",
     "name": "Lab1",
     "description": "Creative coding lab 1 - Georg Nees line grid, version 1."
   },
   {
-    "file": "experiments/lab1-v2.js",
+    "file": "experiments/lab1-1-v2.js",
     "name": "Lab1",
     "description": "Creative coding lab 1 - Georg Nees line grid, version 2."
   },
   {
-    "file": "experiments/lab1-v3.js",
+    "file": "experiments/lab1-2-original.js",
     "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees line grid, version 3."
+    "description": "Creative coding lab 1 - Georg Nees box grid, original recreation."
   },
   {
-    "file": "experiments/lab1-v4.js",
+    "file": "experiments/lab1-2-v1.js",
     "name": "Lab1",
     "description": "Creative coding lab 1 - Georg Nees box grid, version 1."
-  },
-  {
-    "file": "experiments/lab1-v5.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees box grid, version 2."
   }
 ]
