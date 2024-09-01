@@ -15,6 +15,11 @@
     "description": "Creative coding lab 1 - Georg Nees line grid, version 2."
   },
   {
+    "file": "experiments/lab1-1-v3.js",
+    "name": "Lab1",
+    "description": "Creative coding lab 1 - Georg Nees line grid, version 3."
+  },
+  {
     "file": "experiments/lab1-2-original.js",
     "name": "Lab1",
     "description": "Creative coding lab 1 - Georg Nees box grid, original recreation."
