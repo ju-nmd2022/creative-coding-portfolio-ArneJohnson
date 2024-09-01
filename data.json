@@ -28,5 +28,10 @@
     "file": "experiments/lab1-2-v1.js",
     "name": "Lab1",
     "description": "Creative coding lab 1 - Georg Nees box grid, version 1."
+  },
+  {
+    "file": "experiments/lab1-2-v2.js",
+    "name": "Lab1",
+    "description": "Creative coding lab 1 - Georg Nees box grid, version 2."
   }
 ]
