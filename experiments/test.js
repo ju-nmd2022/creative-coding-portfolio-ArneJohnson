@@ -2,6 +2,8 @@ const margin = 200;
 const points = 3;
 const control = [];
 const anchor = [];
+let v = Math.random();
+let w = Math.random();
 
 function setup() {
     createCanvas(innerWidth, innerHeight);
@@ -18,17 +20,22 @@ function setup() {
 function draw() {
     background(255);
 
+    let x = map(noise(v), 0, 1, 0, width);
+    let y = map(noise(w), 0, 1, 0, height);
+    v += 0.01;
+    w += 0.01;
+
     push();
     stroke(0);
     strokeWeight(1);
     noFill();
 
     beginShape();
-    vertex(anchor[0] + perlinNoise(), anchor[1] + perlinNoise());
+    vertex(anchor[0] + x, anchor[1] + y);
     for (let i = 1; i < points; i++) {
-        quadraticVertex(anchor[i * 2] + perlinNoise(), anchor[i * 2 + 1] + perlinNoise(), control[i * 2] + perlinNoise(), control[i * 2 + 1] + perlinNoise());
+        quadraticVertex(anchor[i * 2] + x, anchor[i * 2 + 1] + y, control[i * 2] + x, control[i * 2 + 1] + y);
     }
-    quadraticVertex(anchor[0] + perlinNoise(), anchor[1] + perlinNoise(), control[0] + perlinNoise(), control[1] + perlinNoise());
+    quadraticVertex(anchor[0] + x, anchor[1] + y, control[0] + x, control[1] + y);
     endShape(CLOSE);
 
     pop();
