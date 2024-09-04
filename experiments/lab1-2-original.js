@@ -14,17 +14,17 @@ function draw() {
 
   const centerX = innerWidth / 2;
   const centerY = innerHeight / 2;
-  for (let x = -Math.floor(amount / 2); x < Math.ceil(amount / 2); x++) {
-    for (let y = -Math.floor(amount / 2); y < Math.ceil(amount / 2); y++) {
+  for (let y = -Math.floor(amount / 2); y < Math.ceil(amount / 2); y++) {
+    for (let x = -Math.floor(amount / 2); x < Math.ceil(amount / 2); x++) {
       let xPosition = centerX + x * (size + gap);
       let yPosition = centerY + y * (size + gap);
       if (amount % 2 === 0) {
-        xPosition += size / 2;
+        yPosition += size / 2;
       }
       push();
       count++;
       var percentage = count / (amount * amount * amount);
-      translate(yPosition + random(-200, 200) * percentage, xPosition + random(-200, 200) * percentage);
+      translate(xPosition + random(-200, 200) * percentage, yPosition + random(-200, 200) * percentage);
       rotate(random(-30, 30) * percentage);
 
       noFill();
