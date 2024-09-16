@@ -1,37 +1,47 @@
 [
   {
-    "file": "experiments/lab1-1-original.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees line grid, original recreation."
+    "file": "experiments/1-original.js",
+    "name": "George Nees, 8-ecke original recreation",
+    "description": "Made using randomness and grids."
   },
   {
-    "file": "experiments/lab1-1-v1.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees line grid, version 1."
+    "file": "experiments/1-v1.js",
+    "name": "George Nees, 8-ecke alternative version 1",
+    "description": "Build opon the original by adding opacity changes and more chaos."
   },
   {
-    "file": "experiments/lab1-1-v2.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees line grid, version 2."
+    "file": "experiments/1-v2.js",
+    "name": "George Nees, 8-ecke alternative version 2",
+    "description": "Breaks the grid of the original and adds change in stroke width to add a sense of depth."
   },
   {
-    "file": "experiments/lab1-1-v3.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees line grid, version 3."
+    "file": "experiments/1-v3.js",
+    "name": "George Nees, 8-ecke alternative version 3",
+    "description": "Created a filled shape from the random lines, giving it a camouflage look."
   },
   {
-    "file": "experiments/lab1-2-original.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees box grid, original recreation."
+    "file": "experiments/2-original.js",
+    "name": "George Nees, Schotter Original recreation",
+    "description": "Made using grids, randomness, and percentages."
   },
   {
-    "file": "experiments/lab1-2-v1.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees box grid, version 1."
+    "file": "experiments/2-v1.js",
+    "name": "George Nees, Schotter alternative version 1",
+    "description": "Plays with the scale and creates a more 3D effect on the shapes."
   },
   {
-    "file": "experiments/lab1-2-v2.js",
-    "name": "Lab1",
-    "description": "Creative coding lab 1 - Georg Nees box grid, version 2."
+    "file": "experiments/2-v2.js",
+    "name": "George Nees, Schotter alternative version 2",
+    "description": "Implements perlin noise to the grid and adds a 'motion blur' like effect."
+  },
+  {
+    "file": "experiments/3-original.js",
+    "name": "Erick Calderon, Chromie Squiggle recreation",
+    "description": "Made using perlin noise."
+  },
+  {
+    "file": "experiments/3-v1.js",
+    "name": "Erick Calderon, Chromie Squiggle alternative version 1",
+    "description": "Made using perlin noise."
   }
 ]

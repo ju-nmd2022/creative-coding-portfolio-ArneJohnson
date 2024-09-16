@@ -1,14 +1,15 @@
-const size = 25;
-const amount = 6;
-const gap = 50;
+const size = 40;
+const amount = 8;
+const gap = 20;
 
 function setup() {
   createCanvas(innerWidth, innerHeight);
   rectMode(CENTER);
+  colorMode(HSB, 255);
 }
 
 function draw() {
-  background(255, 255, 255);
+  background(20, 20, 20);
   const centerX = width / 2;
   const centerY = height / 2;
   for (let x = -Math.floor(amount / 2); x < Math.ceil(amount / 2); x++) {
@@ -29,9 +30,12 @@ function draw() {
 
 function createBox() {
   push();
-  strokeWeight(5);
-  stroke(255);
-  fill(random(50, 200));
+  let h = random(50, 100);
+  let s = random(80, 120);
+  let b = random(64, 128);
+
+  noStroke();
+  fill(h, s, b);
   beginShape();
   curveVertex(-size + randomness(), -size + randomness());
   curveVertex(-size / 2 + randomness(), -size + randomness());
