@@ -53,5 +53,10 @@
     "file": "experiments/4-original.js",
     "name": "Tyler Hobbs, Fidenza - Original recreation",
     "description": "Three-dimentional flow field generative algorithm."
+  },
+  {
+    "file": "experiments/4-v1.js",
+    "name": "Tyler Hobbs, Fidenza - alternative version 1",
+    "description": "Creates horns using the same algorithm with added changes in size and random placement."
   }
 ]
