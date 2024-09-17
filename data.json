@@ -1,47 +1,57 @@
 [
   {
     "file": "experiments/1-original.js",
-    "name": "George Nees, 8-ecke original recreation",
+    "name": "George Nees, 8-ecke - Original recreation",
     "description": "Made using randomness and grids."
   },
   {
     "file": "experiments/1-v1.js",
-    "name": "George Nees, 8-ecke alternative version 1",
+    "name": "George Nees, 8-ecke - alternative version 1",
     "description": "Build opon the original by adding opacity changes and more chaos."
   },
   {
     "file": "experiments/1-v2.js",
-    "name": "George Nees, 8-ecke alternative version 2",
+    "name": "George Nees, 8-ecke - alternative version 2",
     "description": "Breaks the grid of the original and adds change in stroke width to add a sense of depth."
   },
   {
     "file": "experiments/1-v3.js",
-    "name": "George Nees, 8-ecke alternative version 3",
+    "name": "George Nees, 8-ecke - alternative version 3",
     "description": "Created a filled shape from the random lines, giving it a camouflage look."
   },
   {
     "file": "experiments/2-original.js",
-    "name": "George Nees, Schotter Original recreation",
+    "name": "George Nees, Schotter - Original recreation",
     "description": "Made using grids, randomness, and percentages."
   },
   {
     "file": "experiments/2-v1.js",
-    "name": "George Nees, Schotter alternative version 1",
+    "name": "George Nees, Schotter - alternative version 1",
     "description": "Plays with the scale and creates a more 3D effect on the shapes."
   },
   {
     "file": "experiments/2-v2.js",
-    "name": "George Nees, Schotter alternative version 2",
+    "name": "George Nees, Schotter - alternative version 2",
     "description": "Implements perlin noise to the grid and adds a 'motion blur' like effect."
   },
   {
     "file": "experiments/3-original.js",
-    "name": "Erick Calderon, Chromie Squiggle recreation",
+    "name": "Erick Calderon, Chromie Squiggle - Original recreation",
     "description": "Made using perlin noise."
   },
   {
     "file": "experiments/3-v1.js",
-    "name": "Erick Calderon, Chromie Squiggle alternative version 1",
-    "description": "Made using perlin noise."
+    "name": "Erick Calderon, Chromie Squiggle - alternative version 1",
+    "description": "Adds incremental increases in size and alternates color to create a snake-like effect."
+  },
+  {
+    "file": "experiments/3-v2.js",
+    "name": "Erick Calderon, Chromie Squiggle - alternative version 2",
+    "description": "Creates a simple landscape from 3 seperate perlin noise vertex shapes."
+  },
+  {
+    "file": "experiments/4-original.js",
+    "name": "Tyler Hobbs, Fidenza - Original recreation",
+    "description": "Three-dimentional flow field generative algorithm."
   }
 ]
