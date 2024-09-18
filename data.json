@@ -50,6 +50,11 @@
     "description": "Creates a simple landscape from 3 seperate perlin noise vertex shapes."
   },
   {
+    "file": "experiments/3-v3.js",
+    "name": "Erick Calderon, Chromie Squiggle - alternative version 3",
+    "description": "Reused noise on a grid, inspired by A. Michael Noll, Ninety computer-generated sinusoids with linearly increasing period."
+  },
+  {
     "file": "experiments/4-original.js",
     "name": "Tyler Hobbs, Fidenza - Original recreation",
     "description": "Three-dimentional flow field generative algorithm."
@@ -58,5 +63,10 @@
     "file": "experiments/4-v1.js",
     "name": "Tyler Hobbs, Fidenza - alternative version 1",
     "description": "Creates horns using the same algorithm with added changes in size and random placement."
+  },
+  {
+    "file": "experiments/4-v2.js",
+    "name": "Tyler Hobbs, Fidenza - alternative version 2",
+    "description": "Changes the particle values and changes their size to create a 'mesh' or 'fluid' like effect."
   }
 ]
