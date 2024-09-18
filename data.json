@@ -57,7 +57,7 @@
   {
     "file": "experiments/4-original.js",
     "name": "Tyler Hobbs, Fidenza - Original recreation",
-    "description": "Three-dimentional flow field generative algorithm."
+    "description": "Three-dimentional flow field generative algorithm. Recreation of the core algorithm."
   },
   {
     "file": "experiments/4-v1.js",
