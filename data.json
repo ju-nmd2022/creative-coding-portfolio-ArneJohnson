@@ -68,5 +68,10 @@
     "file": "experiments/4-v2.js",
     "name": "Tyler Hobbs, Fidenza - alternative version 2",
     "description": "Changes the particle values and changes their size to create a 'mesh' or 'fluid' like effect."
+  },
+  {
+    "file": "experiments/5-1.js",
+    "name": "Tone.js experiement - 1",
+    "description": ""
   }
 ]
