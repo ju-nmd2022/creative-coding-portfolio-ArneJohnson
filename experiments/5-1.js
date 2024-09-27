@@ -1,4 +1,3 @@
-// Master volume in decibels
 const volume = -15;
 
 let synth;
@@ -15,8 +14,8 @@ function setup() {
     Tone.Master.volume.value = volume;
 
     synth = new Tone.Synth({
-        "oscillator": {
-            "type": 'sine'
+        oscillator: {
+            type: 'sine'
         }
     });
 

@@ -72,16 +72,16 @@
   {
     "file": "experiments/5-1.js",
     "name": "Tone.js experiement - 1",
-    "description": "Sine wave waveform, press and hold to play."
+    "description": "Sine waveform, press and hold to play."
   },
   {
     "file": "experiments/5-2.js",
     "name": "Tone.js experiement - 2",
-    "description": ""
+    "description": "Randomly triggered notes, experimenting with octaves and reverb."
   },
   {
     "file": "experiments/5-3.js",
     "name": "Tone.js experiement - 3",
-    "description": ""
+    "description": "Based on Erick Calderon - Chromie Squiggle, added sound based on Y level."
   }
 ]
