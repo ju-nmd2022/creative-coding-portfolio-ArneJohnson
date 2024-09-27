@@ -72,6 +72,16 @@
   {
     "file": "experiments/5-1.js",
     "name": "Tone.js experiement - 1",
+    "description": "Sine wave waveform, press and hold to play."
+  },
+  {
+    "file": "experiments/5-2.js",
+    "name": "Tone.js experiement - 2",
+    "description": ""
+  },
+  {
+    "file": "experiments/5-3.js",
+    "name": "Tone.js experiement - 3",
     "description": ""
   }
 ]

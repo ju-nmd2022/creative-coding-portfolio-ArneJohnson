@@ -1,55 +1,65 @@
-const canvasRadius = 250;
-const stepIncrement = 30;
-const steps = canvasRadius * 2 / stepIncrement;
-let stepCount;
-let x = innerWidth / 2 - canvasRadius;
-let n = 0.9;
+// Master volume in decibels
+const volume = -15;
 
-const synth = new Tone.Synth().toDestination();
-let soundIsPlaying = false;
+let synth;
+
+const width = innerWidth / 2;
+const height = 600;
+
+let n = 0;
 
 function setup() {
-    createCanvas(innerWidth, 600);
-    frameRate(60);
-    noLoop();
+    createCanvas(width, height);
+    background(0);
+
+    Tone.Master.volume.value = volume;
+
+    synth = new Tone.Synth({
+        "oscillator": {
+            "type": 'sine'
+        }
+    });
+
+    synth.connect(Tone.Master);
 }
 
 function draw() {
-    background(255);
-    drawLines();
+    background(0);
 
-    if (soundIsPlaying) {
-        synth.triggerAttackRelease("C4", "1n");
-    }
-}
+    n += 0.003;
 
-function drawLines() {
-    stroke(0);
-    noFill();
-    let tempN = n;
+    const frequency = 50 + noise(n) * 600;
+    synth.setNote(frequency);
 
-    for (let rows = 0; rows < 80; rows++) {
-        x = innerWidth / 2 - canvasRadius;
-        n = tempN;
+    if (mouseIsPressed) {
+        const time = millis() / 1000;
 
+        const verts = 1000;
+        fill(255);
+        stroke(0);
+        strokeWeight(5);
         beginShape();
-        for (stepCount = 0; stepCount < steps; stepCount++) {
-            let y = map(noise(x / (n * 30)), 0, 1, 0, height / 5);
-            curveVertex(x, y + (rows * 5));
-            x += stepIncrement;
-            n += 0.0005;
+        vertex(0, height);
+        for (let i = 0; i < verts; i++) {
+            const t = verts <= 1 ? 0.5 : i / (verts - 1);
+            const x = t * width;
+            let y = height / 2;
+
+            const amplitude = sin(time + t * noise(n) * 20);
+
+            y += amplitude * height / 2 * noise(n);
+
+            vertex(x, y);
         }
-        endShape();
+        vertex(width, height);
+        endShape(CLOSE);
     }
 }
 
-function beginSound() {
-    loop();
-    soundIsPlaying = true;
+function mousePressed() {
+    synth.triggerAttack();
 }
 
-const button = top.document.querySelector(".playButton");
-button.onclick = async () => {
-    await Tone.start();
-    beginSound();
+function mouseReleased() {
+    synth.triggerRelease();
 }
